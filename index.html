@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="./favicon.png">
+
+    <title>Informi GIS Workshop Template</title>
+    <!-- Bootstrap core CSS -->
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="//js.arcgis.com/3.9compact/js/esri/css/esri.css">
+     <!-- Bootstrap-map-js from github.com/dbouwman -->
+    <link rel="stylesheet" type="text/css" href="./css/bootstrapmap.css">
+    
+    <link rel="stylesheet" type="text/css" href="./css/typeahead.css">
+    <!-- Custom styles for this template -->
+    <link href="./css/overrides.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.min.js"></script>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a id="title" class="navbar-brand" href="#"></a>
+            </div>
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li class="active dropdown" id="basemapList">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Basemaps <b class="caret"></b></a>
+                        <ul class="dropdown-menu" id="myDropdown">
+                            <li><a href="#">Streets</a>
+                            </li>
+                            <li><a href="#">MapBox Space</a>
+                            </li>
+                            <li><a href="#">Water Color</a>
+                            </li>
+                            <li><a href="#">Pinterest</a>
+                            </li>
+                            <li><a href="#">Imagery</a>
+                            </li>
+                            <li><a href="#">National Geographic</a>
+                            </li>
+                            <li><a href="#">Topographic</a>
+                            </li>
+                            <li><a href="#">Gray</a>
+                            </li>
+                            <li class="divider"></li>
+                            <li><a href="#">Open Street Map</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="active dropdown" id="basemapList">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Bookmarks <b class="caret"></b></a>
+                        <ul class="dropdown-menu" id="bookmarks"></ul>
+                    </li>
+                    <li><a id="email" href="mailto:info@informi.dk">Contact</a>
+                    </li>
+                </ul>
+                <form class="navbar-form navbar-right" role="search" action="#">
+                    <div class="form-group">
+                        <input data-provide="typeahead" type="text" class="form-control typeahead" placeholder="Search">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-12">
+        <h4 id="subtitle"></h4>
+    </div>
+    <div class="col-lg-12">
+        <div class="wrapper">
+            <div id="map">
+            </div>
+
+        </div>
+    </div>
+    <div class="col-lg-12">
+        <p></p>
+    </div>
+    <div class="bottom col-lg-12">
+        <p class=""></p>
+        <p class=""></p>
+    </div>
+    <script src="//js.arcgis.com/3.9compact"></script>
+    <script src="./js/app.js"></script>
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/typeahead.bundle.min.js"></script>
+</body>
+
+</html>
